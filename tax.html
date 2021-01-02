@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel='stylesheet' href='css/bootstrap.min.css'/>
+        <link rel="stylesheet" href="fonts/css/all.css" >
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Cabin|Caladea|Lora|Noto+Sans+KR|Open+Sans|Overpass|Oxanium|PT+Sans|Pacifico|Roboto+Slab|Source+Code+Pro|Source+Sans+Pro|Tajawal|Titillium+Web|Ubuntu|ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Cabin|Caladea|Lora|Noto+Sans+KR|Open+Sans|Overpass|Oxanium|PT+Sans|Pacifico|Roboto+Slab|Source+Code+Pro|Source+Sans+Pro|Tajawal|Titillium+Web|Ubuntu|ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+  
+          <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=cocon-next-arabic,dubai,dubai-medium,dubai-bold,sky-bold,rawy-bold,rawy-thin,lemonada-bold,lemonada,elmessiri-light,elmessiri-bold,elmessiri,cairo,jazeera-light,sky,bahij,saudi,droid-naskh,insan,esfahan,Ibtisam,hayah,nawar,jannat,rawi,jazeera,droid-sans,DroidKufi-Regular,amiri,flat-jooza" />
+          
+        <link rel='stylesheet' href='css/tax.css'/>
+        <title>حساب ضريبة شحن الرصيد</title>
+    </head>
+    <body>
+        <!------------------------------- Start The Tima And Date : --------------------------->
+        <div class='container'>
+            <section class='date'>
+                <div class='d-time' id='time'></div>
+            </section>
+        </div>
+        
+
+        <!------------------------------- Start The Accordion : --------------------------->
+        <section class='calc'>
+            <div class='container'>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            حساب رصيد الشحن بعد خصم الضريبة
+                        </button>
+                        </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class=row>
+                                <div class='col-md-6 col-sm-12'>
+                                    <form>
+                                        <input class="form-control" type="text" placeholder="أدخل المبلغ الذي تريد دفعه..." id='charge'>
+                                    </form>
+                                    <input type='submit' value='اضغط لحساب الضريبة' class='btn btn-primary' id='calc-tax'>
+                                </div>
+                                <div class='col-md-6 col-sm-12'>
+                                    <textarea id='result' class='form-control phone-c' placeholder='الرصيد بعد خصم الضريبة'></textarea>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Collapsible Group Item #2
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!------------------------------- Start The Javascript : --------------------------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src='js/bootstrap.min.js'></script>
+        <script src='js/tax.js'></script>
+    </body>
+</html>
